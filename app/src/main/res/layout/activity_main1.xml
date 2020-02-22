@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intent.ActMain1">
+
+    <Button
+        android:id="@+id/mBtn01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="啟動另一個Activity(未帶資料)" />
+
+    <Button
+        android:layout_below="@id/mBtn01"
+        android:id="@+id/mBtn02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="啟動另一個Activity(帶資料)" />
+
+    <Button
+        android:layout_below="@id/mBtn02"
+        android:id="@+id/mBtn03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="啟動另一個Activity(回傳資料)" />
+
+</RelativeLayout>
