@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SampleDemo</string>
+    <string name="intent">Intent使用</string>
 </resources>

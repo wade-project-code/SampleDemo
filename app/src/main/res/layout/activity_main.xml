@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:text="Intent使用"
+        android:text="@string/intent"
         android:id="@+id/mBtnIntent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
