@@ -10,12 +10,20 @@ import android.widget.Button;
 import com.example.sampledemo.intent.ActMain1;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnIntent;
+    private Button mBtnIntent,mBtnFragment;
 
     private View.OnClickListener mBtnIntent_click = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, ActMain1.class);
+            startActivity(intent);
+        }
+    };
+
+    private View.OnClickListener mBtnFragment_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this, ActFragment.class);
             startActivity(intent);
         }
     };
@@ -31,5 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private void init(){
         mBtnIntent = findViewById(R.id.mBtnIntent);
         mBtnIntent.setOnClickListener(mBtnIntent_click);
+        mBtnFragment = findViewById(R.id.mBtnFragment);
+        mBtnFragment.setOnClickListener(mBtnFragment_click);
     }
 }

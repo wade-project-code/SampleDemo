@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">SampleDemo</string>
     <string name="intent">Intent使用</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="textview_msg">請選擇 :</string>
+    <string name="textview_msg_yes">選擇 : yes</string>
+    <string name="textview_msg_no">選擇 : no</string>
+    <string name="fragment">Fragment使用</string>
 </resources>

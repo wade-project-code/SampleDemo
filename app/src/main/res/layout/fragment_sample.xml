@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorOrange"
+    android:orientation="vertical"
+    tools:context=".fragment.SampleFragment">
+
+    <RadioGroup
+       android:id="@+id/mRadioGroup"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:orientation="horizontal" >
+
+       <TextView
+           android:id="@+id/mTextView"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="2"
+           android:gravity="center"
+           android:text="@string/textview_msg"
+           android:textSize="20sp" />
+
+       <RadioButton
+           android:id="@+id/mRadioBtnYes"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:textSize="16sp"
+            android:text="@string/yes" />
+
+       <RadioButton
+           android:id="@+id/mRadioBtnNo"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="16sp"
+           android:text="@string/no" />
+   </RadioGroup>
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textSize="20sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="@string/textview_msg"
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/mRatingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar.Indicator"
+            android:numStars="6"
+            android:stepSize="0.5"
+            android:rating="3.5"
+            android:isIndicator="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

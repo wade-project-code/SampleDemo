@@ -8,8 +8,16 @@
     tools:context=".MainActivity">
 
     <Button
+        android:textAllCaps="false"
         android:text="@string/intent"
         android:id="@+id/mBtnIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textAllCaps="false"
+        android:text="@string/fragment"
+        android:id="@+id/mBtnFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
