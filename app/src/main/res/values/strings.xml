@@ -10,4 +10,6 @@
     <string name="textview_msg_yes">選擇 : yes</string>
     <string name="textview_msg_no">選擇 : no</string>
     <string name="fragment">Fragment使用</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>

@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#81D4FA"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/mTxtLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:text="Widget ID"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/mTxtId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout2"
+        android:layout_below="@id/mLinearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/mTxtTime"
+            android:text="TextView"
+            android:background="@android:color/white"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/mLinearLayout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mBtnUpdate"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
