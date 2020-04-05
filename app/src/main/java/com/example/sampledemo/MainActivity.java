@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.sampledemo.intent.ActMain1;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnIntent,mBtnFragment,mBtnCollapsing;
+    private Button mBtnIntent,mBtnFragment,mBtnCollapsing,mBtnRetrofit;
 
     private View.OnClickListener mBtnIntent_click = new View.OnClickListener() {
         @Override
@@ -36,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private View.OnClickListener mBtnRetrofit_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this,RetrofitActivity.class);
+            startActivity(intent);
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,5 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnFragment.setOnClickListener(mBtnFragment_click);
         mBtnCollapsing = findViewById(R.id.mBtnCollapsing);
         mBtnCollapsing.setOnClickListener(mBtnCollapsing_click);
+        mBtnRetrofit = findViewById(R.id.mBtnRetrofit);
+        mBtnRetrofit.setOnClickListener(mBtnRetrofit_click);
     }
 }
