@@ -21,4 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:textAllCaps="false"
+        android:text="@string/collapsing"
+        android:id="@+id/mBtnCollapsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

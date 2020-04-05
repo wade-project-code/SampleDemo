@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.sampledemo.intent.ActMain1;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mBtnIntent,mBtnFragment;
+    private Button mBtnIntent,mBtnFragment,mBtnCollapsing;
 
     private View.OnClickListener mBtnIntent_click = new View.OnClickListener() {
         @Override
@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener mBtnFragment_click = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(MainActivity.this, ActFragment.class);
+            Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    private View.OnClickListener mBtnCollapsing_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this,CollapsingActivity.class);
             startActivity(intent);
         }
     };
@@ -41,5 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnIntent.setOnClickListener(mBtnIntent_click);
         mBtnFragment = findViewById(R.id.mBtnFragment);
         mBtnFragment.setOnClickListener(mBtnFragment_click);
+        mBtnCollapsing = findViewById(R.id.mBtnCollapsing);
+        mBtnCollapsing.setOnClickListener(mBtnCollapsing_click);
     }
 }

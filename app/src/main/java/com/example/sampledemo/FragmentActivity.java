@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.sampledemo.R;
 
-public class ActFragment extends AppCompatActivity {
+public class FragmentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

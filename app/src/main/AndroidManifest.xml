@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActFragment" />
-
+        <activity android:name=".CollapsingActivity"></activity>
+        <activity android:name=".FragmentActivity" />
         <activity android:name=".intent.ActMain2" />
         <activity android:name=".intent.ActMain1" />
         <activity android:name=".MainActivity">
@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".widget.NewAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
