@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".RetrofitActivity">
 
+    <Button
+        android:id="@+id/mBtnPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="POST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnGetParam" />
+
     <TextView
         android:id="@+id/mTxtData"
         android:layout_width="0dp"
@@ -14,18 +24,20 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
         android:text="DATA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mBtnGetParam" />
+        app:layout_constraintTop_toBottomOf="@+id/mBtnPost" />
 
     <Button
         android:id="@+id/mBtnGetParam"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="POST"
+        android:text="GET(參數)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mBtnGet" />

@@ -1,14 +1,20 @@
 package com.example.sampledemo.bean;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Wade on 2020/4/5.
  */
 public class PostsBean {
     public final static String DATA_URL = "https://jsonplaceholder.typicode.com";
 
+    @SerializedName("userId")
     private int userId;
+    @SerializedName("id")
     private int id;
+    @SerializedName("title")
     private String title;
+    @SerializedName("body")
     private String body;
 
     public int getUserId() {
