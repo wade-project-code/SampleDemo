@@ -19,4 +19,7 @@
 
 指揮中心提醒，縣市政府未來對於人群聚集之觀光旅遊景點，應加派人力進行社交距離宣導，對於未保持社交距離者，加強勸導保持距離或配戴口罩，並提供備用口罩。</string>
     <string name="retrofit">Retrofit使用</string>
+    <string name="dialog">Dialog使用</string>
+    <string name="password">Password</string>
+    <string name="user">User</string>
 </resources>
